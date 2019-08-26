@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>DevConnector</title>
+</head>
+
+<body>
+    <nav class="navbar bg-dark">
+        <h1>
+            <a href="dashboard.html"><i class="fas fa-code"></i> DevConnector</a>
+        </h1>
+        <ul>
+            <li><a href="profiles.html">Developres</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <h1 class="large text-primary">Dahboard</h1>
+        <p class="lead">
+            <i class="fas fa-user"></i> Welcome Jane Doe
+        </p>
+        <div class="dash-buttons">
+            <a href="crate-profile.html" class="btn">
+                <i class="fas fa-user-circle text-primary"></i> Edit Profile
+            </a>
+            <a href="crate-profile.html" class="btn">
+                <i class="fab fa-black-tie text-primary"></i> Add Experience
+            </a>
+            <a href="crate-profile.html" class="btn">
+                <i class="fas fa-graduation-cap text-primary"></i> Add Education
+            </a>
+        </div>
+        <!--Experince Section -->
+        <h2 class="my-2">Experience Credentials </h2>
+        <table class="table">
+            <thead>
+                <th>Comapny</th>
+                <th class="hide-sm">Title</th>
+                <th class="hide-sm">Year</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Microsoft</td>
+                    <td class="hide-sm">Senio Developer</td>
+                    <td class="hide-sm">Oct 2011 - Current</td>
+                    <td><button class="btn btn-danger"> Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Google</td>
+                    <td class="hide-sm">Senio Developer</td>
+                    <td class="hide-sm">Oct 2011 - Current</td>
+                    <td><button class="btn btn-danger"> Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Education Section -->
+        <h2 class="my-2">Education Credentials </h2>
+        <table class="table">
+            <thead>
+                <th>School</th>
+                <th class="hide-sm">Degree</th>
+                <th class="hide-sm">Year</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>University</td>
+                    <td class="hide-sm">Masters</td>
+                    <td class="hide-sm">Oct 2000 - Oct 2003</td>
+                    <td><button class="btn btn-danger"> Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="my-2">
+            <button class="btn btn-danger">
+                <i class="fas fa-user-minus"></i> Delete Account
+            </button>
+        </div>
+    </section>
+</body>
+
+</html>
