@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .hide-sm {
         display: none;
     }
@@ -83,20 +83,4 @@
         }
     }
 
-}
-
-@media (max-width:600) {
-
-    //text styles
-    .x-large {
-        font-size: 3rem;
-    }
-
-    .large {
-        font-size: 2rem;
-    }
-
-    .lead {
-        font-size: 1rem;
-    }
 }

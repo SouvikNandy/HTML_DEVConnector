@@ -580,7 +580,7 @@ img {
   text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .hide-sm {
     display: none;
   }
@@ -643,17 +643,5 @@ img {
   .post a,
   .post button {
     padding: 0.3rem 0.4rem;
-  }
-}
-
-@media (max-width: 600) {
-  .x-large {
-    font-size: 3rem;
-  }
-  .large {
-    font-size: 2rem;
-  }
-  .lead {
-    font-size: 1rem;
   }
 }
