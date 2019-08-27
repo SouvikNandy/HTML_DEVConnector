@@ -277,6 +277,18 @@
   color: #fff;
 }
 
+.comment .fa-thumbs-up {
+  color: #17a2b8;
+}
+
+.comment .fa-heart {
+  color: #dc3545;
+}
+
+.comment .fa-thumbs-down {
+  color: #343a40;
+}
+
 .form-group {
   margin: 1.2rem 0;
 }
@@ -335,6 +347,110 @@
 
 .form .social-input i.fa-linkedin {
   color: #0077b5;
+}
+
+.comment {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'comment-image  comment-box';
+  grid-gap: 0rem 0rem;
+  padding: 0.2rem;
+  border-style: none;
+}
+
+.comment .comment-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: comment-image;
+  text-align: center;
+}
+
+.comment .comment-image img {
+  margin-bottom: 0rem;
+}
+
+.comment .comment-box {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: comment-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.comment .comment-box .comment-text {
+  grid-area: comment-text;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2rem;
+  padding: 0.4rem;
+  background-position: right;
+}
+
+.comment .comment-box .comment-props {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.comment .comment-box .comment-props .comment-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 1.2rem;
+}
+
+.comment .comment-box .comment-props .comment-options li {
+  padding: 0.5rem;
+}
+
+.comment .comment-box .comment-props .comment-options li:nth-child(2) {
+  font-weight: bold;
+  color: #343a40;
+}
+
+.comment .comment-box .comment-props .comment-options li:nth-child(3) {
+  font-weight: bold;
+  color: #343a40;
+}
+
+.comment .comment-box .comment-props .reaction-history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-style: solid;
+  border-radius: 2rem;
+  border-width: 1px;
+  background: #f4f4f4;
+  margin: -1.6rem 0 1.6rem 0;
+  padding: 0.1rem 0.5rem;
+}
+
+.comment .comment-box .comment-props .reaction-history li {
+  padding: 0.1rem;
+  font-weight: bold;
+}
+
+.comment .comment-box .comment-new {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.comment .comment-box .comment-old {
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 * {
@@ -446,7 +562,7 @@ img {
 .profile-grid {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "top top" "about about" "exp edu" "github github";
+      grid-template-areas: 'top top' 'about about' 'exp edu' 'github github';
   grid-gap: 1rem;
 }
 
@@ -578,6 +694,19 @@ img {
 
 .post > div:first-child {
   text-align: center;
+}
+
+.post a p {
+  color: #343a40;
+}
+
+.post a p:active {
+  background: #f4f4f4;
+}
+
+.post a,
+.post button {
+  font: inherit;
 }
 
 @media (max-width: 600px) {

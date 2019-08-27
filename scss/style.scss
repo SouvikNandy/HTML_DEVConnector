@@ -1,6 +1,7 @@
 @import 'config';
 @import 'utilities';
 @import 'forms';
+@import'posts';
 
 * {
     box-sizing: border-box;
@@ -95,7 +96,10 @@ img {
 .profile-grid {
     display: grid;
     grid-template-areas:
-        'top top''about about''exp edu''github github';
+        'top top'
+        'about about'
+        'exp edu'
+        'github github';
     grid-gap: 1rem;
 
     .profile-top {
@@ -194,6 +198,20 @@ img {
 
     &>div:first-child {
         text-align: center;
+    }
+
+    a p {
+        color: $dark-color;
+
+        &:active {
+            background: $light-color;
+        }
+    }
+
+
+    a,
+    button {
+        font: inherit;
     }
 }
 

@@ -188,3 +188,18 @@
         @include set-background($danger-color);
     }
 }
+
+//comments
+.comment {
+    .fa-thumbs-up {
+        color: $primary-color;
+    }
+
+    .fa-heart {
+        color: $danger-color;
+    }
+
+    .fa-thumbs-down {
+        color: $dark-color
+    }
+}
